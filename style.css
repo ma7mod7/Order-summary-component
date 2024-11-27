@@ -1,0 +1,136 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    outline:none;
+    box-sizing: border-box;
+    position: relative;
+      
+}
+
+body{
+    height: 100svh;
+    max-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url('order-summary-component-main/images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:  hsl(224, 23%, 55%);
+}
+main{
+    width: 410px;
+    height: 640px;
+    background-color: hsl(225, 100%, 98%);;
+    border-radius: 8px;
+    box-shadow: 0px 8px  28px hsla(245, 70%, 76%, 0.672);
+
+   
+}
+.photo{
+    width: 410px;
+    height: 220px;
+    border-radius: 8px 8px 0px 0px;
+    background-image: url('order-summary-component-main/images/illustration-hero.svg'); /* Add the image */
+    background-repeat: no-repeat;
+}
+.cardinfo-intro h1{
+ text-align: center;
+ padding: 10px;
+ margin: 8px 0px;
+ font-weight: 700;
+
+}
+.cardinfo-intro p{
+    text-align: center;
+    padding: 5px 26px ;
+    color:   hsl(224, 23%, 55%);
+}
+.annual{
+    background-color:  hsla(224, 24%, 48%, 0.047);
+    border-radius: 8px;
+    width: 340px;
+    display: flex;
+    margin: 28px auto;
+    padding: 12px;
+}
+.annual p{
+    margin:4px 14px;
+    font-weight: 700;
+}
+.annual .price{
+    display: block;
+    font-weight: 500;
+    color:   hsl(224, 23%, 55%);
+    font-size: 14px;
+    margin-top: 4px;
+}
+.annual a{
+    color:  hsl(245, 75%, 52%);
+    margin: auto;
+    margin-left: 68px;
+    font-weight: 500;
+}
+.annual a:hover{
+    color: hsl(223, 47%, 23%);
+    text-decoration: none;
+}
+.buttons
+{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+
+}
+.Payment{
+
+  background-color: hsl(245, 75%, 52%);
+  height: 45px;
+  width:  340px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0px 8px  24px hsla(245, 76%, 54%, 0.508);
+  font-weight: 700;
+
+}
+.Payment:hover{
+    background-color:  hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+.buttons a{
+
+    color: gray;
+    margin-top: 30px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+.buttons a:hover{
+    color:black
+}
+@media (max-width:426px){
+    body{
+        background-image:none;
+        background-color:  hsla(224, 33%, 47%, 0.308);
+    }
+    main{
+        width: 350px;
+        overflow: hidden;
+       
+    }
+    .photo{
+        left: -50px;
+    }
+    .annual{
+        width: 320px;
+    }
+    .Payment{
+        width: 320px;
+
+    }
+}
+
+
